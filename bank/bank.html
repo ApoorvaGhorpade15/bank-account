@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content='IE=edge'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!---fontawesome-->
+    <script src="https://kit.fontawesome.com/b1409704b8.js" crossorigin="anonymous"></script>
+
+    <!---Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+
+    <title>Bank</title>
+
+    <!---CSS link-->
+    <link rel='stylesheet' href='bank.css'>
+
+    <!---Favicon-->
+    <link rel="shortcut icon" type="image/png" href="/bank/img/bank-logo1.png" />
+</head>
+
+<body>
+
+    <!-- header section starts-->
+    <header>
+        <a href="#home" class="logo">
+            <div id="bank-logo">
+                <img src="/bank/img/bank-logo.png" alt="bank.com" onclick="document.location='bank.html'">
+            </div>
+        </a>
+
+        <nav class="navbar">
+            <a class="active" href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#blog">Blog</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="icons">
+            <i class="fas fa-bars" id="menu-bars"></i>
+        </div>
+
+    </header>
+
+    <!-- header section ends-->
+
+    <!-- home section starts  -->
+
+    <section class="home" id="home">
+        <div class="swiper-container home-slider">
+
+            <div class="swiper-slide slide">
+                <div class="content">
+                    <span>Create Your Own Bank Account</span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <button class="getstarted" id="btn" onclick="document.location='account.html'">Get Started</button>
+                </div>
+                <div class="image">
+                    <img src="/bank/img/Frame.png" alt="">
+                </div>
+            </div>
+        </div>
+        </div>
+
+    </section>
+    <!-- home section ends-->
+
+
+    </section>
+
+    <!-- custom js file link  -->
+    <script src="bank.js"></script>
+</body>
+
+</html>

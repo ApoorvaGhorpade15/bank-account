@@ -1,0 +1,1590 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content='IE=edge'>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!---fontawesome-->
+        <script src="https://kit.fontawesome.com/b1409704b8.js" crossorigin="anonymous"></script>
+
+        <!---Google fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+
+        <title>Bank</title>
+
+        <!---CSS link-->
+        <link rel='stylesheet' href='account.css'>
+
+        <!---Favicon-->
+        <link rel="shortcut icon" type="image/png" href="/bank/img/bank-logo1.png" />
+</head>
+
+<body>
+
+        <!-- header section starts-->
+        <header>
+                <a href="#home" class="logo">
+                        <div id="bank-logo">
+                                <img src="/bank/img/bank-logo.png" alt="bank.com"
+                                        onclick="document.location='bank.html'">
+                        </div>
+                </a>
+
+                <nav class="navbar">
+                        <a class="active" href="#home">Login</a>
+                        <a href="#createaccount">Create Account</a>
+                </nav>
+
+                <div class="icons">
+                        <i class="fas fa-bars" id="menu-bars"></i>
+                </div>
+
+        </header>
+
+        <!-- header section ends-->
+
+        <!-- home section starts  -->
+
+        <section class="home" id="home">
+                <div class="swiper-container home-slider">
+
+                        <div class="swiper-slide slide">
+                                <div class="image">
+                                        <img src="/bank/img/Bank-vector 1.png" alt="">
+                                </div>
+                                <div class="content">
+                                        <span>Meet the next<br> gen <u class="underline">banking</u></span>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                                tempor incididunt ut labore et dolore magna aliqua</p>
+                                </div>
+                        </div>
+                </div>
+                </div>
+
+        </section>
+        <!-- home section ends-->
+
+        <!-- form section starts -->
+
+        <section class="acdetails" id="acdetails">
+                <form action="#" method="post">
+                        <h1 class="heading"> Savings Account Opening Form </h1>
+
+                        <div class="row">
+                                <div class="content">
+                                        <div class="container">
+                                                <div class="main-buttons">
+                                                        <a href="#personaldetails">
+                                                                <p class="activebtn" id="personal">Personal Details</p>
+                                                        </a>
+                                                </div>
+                                                <div class="main-buttons">
+                                                        <a href="#contactdetails">
+                                                                <p id="contact">Contact Details</p>
+                                                        </a>
+                                                </div>
+                                                <div class="main-buttons">
+                                                        <a href="#uploaddocuments">
+                                                                <p id="uploads">Upload Files</p>
+                                                        </a>
+                                                </div>
+                                                <div class="main-buttons">
+                                                        <a href="#termspolicies">
+                                                                <p id="terms">Terms & Policies</p>
+                                                        </a>
+                                                </div>
+                                                <!-- <div class="icons">
+                                                <p id="submit">Submit Form</p>
+                                        </div> -->
+
+                                                <!-- Personal Details start -->
+
+                                                <div class="white-box">
+                                                        <h3 id="personaldetails">Personal Details</h3>
+                                                        <p id="note">Note: Please fill necessary fields marked *</p>
+                                                        <div class="personal">
+                                                                <li>
+                                                                        <label for="firnam" id="firstname">First Name
+                                                                                *</label><br>
+                                                                        <input class="details" type="text" name="fname"
+                                                                                id="fname" minlength="3" maxlength="10"
+                                                                                placeholder="Your First Name" required>
+                                                                </li>
+                                                                <li>
+                                                                        <label for="midnam" id="middlename">Middle Name
+                                                                                *</label><br>
+                                                                        <input class="details" type="text" name="mname"
+                                                                                id="mname" minlength="3" maxlength="10"
+                                                                                placeholder="Your Middle Name" required>
+                                                                </li>
+                                                                <li>
+                                                                        <label for="ladnam" id="lastname">Last Name
+                                                                                *</label><br>
+                                                                        <input class="details" type="text" name="lname"
+                                                                                id="lname" minlength="3" maxlength="10"
+                                                                                placeholder="Your Last Name" required>
+                                                                </li>
+                                                                <li>
+                                                                        <label for="date" id="dob">Date of Birth
+                                                                                *</label><br>
+                                                                        <input class="details" type="date"
+                                                                                id="dateofbirth"
+                                                                                placeholder="DD/MM/YYYY" required>
+                                                                </li>
+                                                                <li>
+                                                                        <label for="sex" id="gen">Gender *</label><br>
+                                                                        <select class="details" required id="gender"
+                                                                                name="gend">
+                                                                                <option value="" selected disabled
+                                                                                        hidden>Select
+                                                                                        Option</option>
+                                                                                <option value="male">Male</option>
+                                                                                <option value="female">Femle</option>
+                                                                                <option value="Other">Other</option>
+                                                                        </select>
+                                                                </li>
+                                                                <li>
+                                                                        <label for="martial" id="mar">Marital
+                                                                                Status</label><br>
+                                                                        <select class="details" id="martialstatus"
+                                                                                name="">
+                                                                                <option value="none" selected disabled
+                                                                                        hidden>
+                                                                                        Select Option</option>
+                                                                                <option value="married">Married</option>
+                                                                                <option value="unmarried">Unmarried
+                                                                                </option>
+                                                                                <option value="single">Single</option>
+                                                                                <option value="divorced">Divorced
+                                                                                </option>
+                                                                                <option value="apart">Living Apart
+                                                                                </option>
+                                                                        </select>
+                                                                </li>
+                                                                <li>
+                                                                        <label for="nation"
+                                                                                id="nati">Nationality</label><br>
+                                                                        <select class="details" id="nation" name="nat">
+                                                                                <option value="none" selected disabled
+                                                                                        hidden>
+                                                                                        Select Option</option>
+                                                                                <option value='afghan'>Afghan</option>
+                                                                                <option value='albanian'>Albanian
+                                                                                </option>
+                                                                                <option value='algerian'>Algerian
+                                                                                </option>
+                                                                                <option value='american'>American
+                                                                                </option>
+                                                                                <option value='andorran'>Andorran
+                                                                                </option>
+                                                                                <option value='angolan'>Angolan</option>
+                                                                                <option value='anguillan'>Anguillan
+                                                                                </option>
+                                                                                <option
+                                                                                        value='citizen-of-antigua-and-barbuda'>
+                                                                                        Citizen of Antigua and Barbuda
+                                                                                </option>
+                                                                                <option value='argentine'>Argentine
+                                                                                </option>
+                                                                                <option value='armenianaustralian'>
+                                                                                        ArmenianAustralian</option>
+                                                                                <option value='austrian'>Austrian
+                                                                                </option>
+                                                                                <option value='azerbaijani'>Azerbaijani
+                                                                                </option>
+                                                                                <option value='bahamian'>Bahamian
+                                                                                </option>
+                                                                                <option value='bahraini'>Bahraini
+                                                                                </option>
+                                                                                <option value='bangladeshi'>Bangladeshi
+                                                                                </option>
+                                                                                <option value='barbadian'>Barbadian
+                                                                                </option>
+                                                                                <option value='belarusian'>Belarusian
+                                                                                </option>
+                                                                                <option value='belgian'>Belgian</option>
+                                                                                <option value='belizean'>Belizean
+                                                                                </option>
+                                                                                <option value='beninese'>Beninese
+                                                                                </option>
+                                                                                <option value='bermudian'>Bermudian
+                                                                                </option>
+                                                                                <option value='bhutanese'>Bhutanese
+                                                                                </option>
+                                                                                <option value='bolivian'>Bolivian
+                                                                                </option>
+                                                                                <option
+                                                                                        value='citizen-of-bosnia-and-herzegovina'>
+                                                                                        Citizen of Bosnia and
+                                                                                        Herzegovina
+                                                                                </option>
+                                                                                <option value='botswanan'>Botswanan
+                                                                                </option>
+                                                                                <option value='brazilian'>Brazilian
+                                                                                </option>
+                                                                                <option value='british'>British</option>
+                                                                                <option value='british-virgin-islander'>
+                                                                                        British
+                                                                                        Virgin Islander</option>
+                                                                                <option value='bruneian'>Bruneian
+                                                                                </option>
+                                                                                <option value='bulgarian'>Bulgarian
+                                                                                </option>
+                                                                                <option value='burkinan'>Burkinan
+                                                                                </option>
+                                                                                <option value='burmese'>Burmese</option>
+                                                                                <option value='burundian'>Burundian
+                                                                                </option>
+                                                                                <option value='cambodian'>Cambodian
+                                                                                </option>
+                                                                                <option value='cameroonian'>Cameroonian
+                                                                                </option>
+                                                                                <option value='canadian'>Canadian
+                                                                                </option>
+                                                                                <option value='cape-verdean'>Cape
+                                                                                        Verdean
+                                                                                </option>
+                                                                                <option value='cayman-islander'>Cayman
+                                                                                        Islander
+                                                                                </option>
+                                                                                <option value='central-african'>Central
+                                                                                        African
+                                                                                </option>
+                                                                                <option value='chadian'>Chadian</option>
+                                                                                <option value='chilean'>Chilean</option>
+                                                                                <option value='chinese'>Chinese</option>
+                                                                                <option value='colombian'>Colombian
+                                                                                </option>
+                                                                                <option value='comoran'>Comoran</option>
+                                                                                <option value='congolese-(congo)'>
+                                                                                        Congolese
+                                                                                        (Congo)</option>
+                                                                                <option value='congolese-(drc)'>
+                                                                                        Congolese (DRC)
+                                                                                </option>
+                                                                                <option value='cook-islander'>Cook
+                                                                                        Islander
+                                                                                </option>
+                                                                                <option value='costa-rican'>Costa Rican
+                                                                                </option>
+                                                                                <option value='croatian'>Croatian
+                                                                                </option>
+                                                                                <option value='cuban'>Cuban</option>
+                                                                                <option value='cymraes'>Cymraes</option>
+                                                                                <option value='cymro'>Cymro</option>
+                                                                                <option value='cypriot'>Cypriot</option>
+                                                                                <option value='czech'>Czech</option>
+                                                                                <option value='danish'>Danish</option>
+                                                                                <option value='djiboutian'>Djiboutian
+                                                                                </option>
+                                                                                <option value='dominican'>Dominican
+                                                                                </option>
+                                                                                <option
+                                                                                        value='citizen-of-the-dominican-republic'>
+                                                                                        Citizen of the Dominican
+                                                                                        Republic
+                                                                                </option>
+                                                                                <option value='dutch'>Dutch</option>
+                                                                                <option value='east-timorese'>East
+                                                                                        Timorese
+                                                                                </option>
+                                                                                <option value='ecuadorean'>Ecuadorean
+                                                                                </option>
+                                                                                <option value='egyptian'>Egyptian
+                                                                                </option>
+                                                                                <option value='emirati'>Emirati</option>
+                                                                                <option value='english'>English</option>
+                                                                                <option value='equatorial-guinean'>
+                                                                                        Equatorial
+                                                                                        Guinean</option>
+                                                                                <option value='eritrean'>Eritrean
+                                                                                </option>
+                                                                                <option value='estonian'>Estonian
+                                                                                </option>
+                                                                                <option value='ethiopian'>Ethiopian
+                                                                                </option>
+                                                                                <option value='faroese'>Faroese</option>
+                                                                                <option value='fijian'>Fijian</option>
+                                                                                <option value='filipino'>Filipino
+                                                                                </option>
+                                                                                <option value='finnish'>Finnish</option>
+                                                                                <option value='french'>French</option>
+                                                                                <option value='gabonese'>Gabonese
+                                                                                </option>
+                                                                                <option value='gambian'>Gambian</option>
+                                                                                <option value='georgian'>Georgian
+                                                                                </option>
+                                                                                <option value='german'>German</option>
+                                                                                <option value='ghanaian'>Ghanaian
+                                                                                </option>
+                                                                                <option value='gibraltarian'>
+                                                                                        Gibraltarian
+                                                                                </option>
+                                                                                <option value='greek'>Greek</option>
+                                                                                <option value='greenlandic'>Greenlandic
+                                                                                </option>
+                                                                                <option value='grenadian'>Grenadian
+                                                                                </option>
+                                                                                <option value='guamanian'>Guamanian
+                                                                                </option>
+                                                                                <option value='guatemalan'>Guatemalan
+                                                                                </option>
+                                                                                <option
+                                                                                        value='citizen-of-guinea-bissau'>
+                                                                                        Citizen
+                                                                                        of Guinea-Bissau</option>
+                                                                                <option value='guinean'>Guinean</option>
+                                                                                <option value='guyanese'>Guyanese
+                                                                                </option>
+                                                                                <option value='haitian'>Haitian</option>
+                                                                                <option value='honduran'>Honduran
+                                                                                </option>
+                                                                                <option value='hong-konger'>Hong Konger
+                                                                                </option>
+                                                                                <option value='hungarian'>Hungarian
+                                                                                </option>
+                                                                                <option value='icelandic'>Icelandic
+                                                                                </option>
+                                                                                <option value='indian'>Indian</option>
+                                                                                <option value='indonesian'>Indonesian
+                                                                                </option>
+                                                                                <option value='iranian'>Iranian</option>
+                                                                                <option value='iraqi'>Iraqi</option>
+                                                                                <option value='irish'>Irish</option>
+                                                                                <option value='israeli'>Israeli</option>
+                                                                                <option value='italian'>Italian</option>
+                                                                                <option value='ivorian'>Ivorian</option>
+                                                                                <option value='jamaican'>Jamaican
+                                                                                </option>
+                                                                                <option value='japanese'>Japanese
+                                                                                </option>
+                                                                                <option value='jordanian'>Jordanian
+                                                                                </option>
+                                                                                <option value='kazakh'>Kazakh</option>
+                                                                                <option value='kenyan'>Kenyan</option>
+                                                                                <option value='kittitian'>Kittitian
+                                                                                </option>
+                                                                                <option value='citizen-of-kiribati'>
+                                                                                        Citizen of
+                                                                                        Kiribati</option>
+                                                                                <option value='kosovan'>Kosovan</option>
+                                                                                <option value='kuwaiti'>Kuwaiti</option>
+                                                                                <option value='kyrgyz'>Kyrgyz</option>
+                                                                                <option value='lao'>Lao</option>
+                                                                                <option value='latvian'>Latvian</option>
+                                                                                <option value='lebanese'>Lebanese
+                                                                                </option>
+                                                                                <option value='liberian'>Liberian
+                                                                                </option>
+                                                                                <option value='libyan'>Libyan</option>
+                                                                                <option value='liechtenstein-citizen'>
+                                                                                        Liechtenstein citizen</option>
+                                                                                <option value='lithuanian'>Lithuanian
+                                                                                </option>
+                                                                                <option value='luxembourger'>
+                                                                                        Luxembourger
+                                                                                </option>
+                                                                                <option value='macanese'>Macanese
+                                                                                </option>
+                                                                                <option value='macedonian'>Macedonian
+                                                                                </option>
+                                                                                <option value='malagasy'>Malagasy
+                                                                                </option>
+                                                                                <option value='malawian'>Malawian
+                                                                                </option>
+                                                                                <option value='malaysian'>Malaysian
+                                                                                </option>
+                                                                                <option value='maldivian'>Maldivian
+                                                                                </option>
+                                                                                <option value='malian'>Malian</option>
+                                                                                <option value='maltese'>Maltese</option>
+                                                                                <option value='marshallese'>Marshallese
+                                                                                </option>
+                                                                                <option value='martiniquais'>
+                                                                                        Martiniquais
+                                                                                </option>
+                                                                                <option value='mauritanian'>Mauritanian
+                                                                                </option>
+                                                                                <option value='mauritian'>Mauritian
+                                                                                </option>
+                                                                                <option value='mexican'>Mexican</option>
+                                                                                <option value='micronesian'>Micronesian
+                                                                                </option>
+                                                                                <option value='moldovan'>Moldovan
+                                                                                </option>
+                                                                                <option value='monegasque'>Monegasque
+                                                                                </option>
+                                                                                <option value='mongolian'>Mongolian
+                                                                                </option>
+                                                                                <option value='montenegrin'>Montenegrin
+                                                                                </option>
+                                                                                <option value='montserratian'>
+                                                                                        Montserratian
+                                                                                </option>
+                                                                                <option value='moroccan'>Moroccan
+                                                                                </option>
+                                                                                <option value='mosotho'>Mosotho</option>
+                                                                                <option value='mozambican'>Mozambican
+                                                                                </option>
+                                                                                <option value='namibian'>Namibian
+                                                                                </option>
+                                                                                <option value='nauruan'>Nauruan</option>
+                                                                                <option value='nepalese'>Nepalese
+                                                                                </option>
+                                                                                <option value='new-zealander'>New
+                                                                                        Zealander
+                                                                                </option>
+                                                                                <option value='nicaraguan'>Nicaraguan
+                                                                                </option>
+                                                                                <option value='nigerian'>Nigerian
+                                                                                </option>
+                                                                                <option value='nigerien'>Nigerien
+                                                                                </option>
+                                                                                <option value='niuean'>Niuean</option>
+                                                                                <option value='north-korean'>North
+                                                                                        Korean
+                                                                                </option>
+                                                                                <option value='northern-irish'>Northern
+                                                                                        Irish
+                                                                                </option>
+                                                                                <option value='norwegian'>Norwegian
+                                                                                </option>
+                                                                                <option value='omani'>Omani</option>
+                                                                                <option value='pakistani'>Pakistani
+                                                                                </option>
+                                                                                <option value='palauan'>Palauan</option>
+                                                                                <option value='palestinian'>Palestinian
+                                                                                </option>
+                                                                                <option value='panamanian'>Panamanian
+                                                                                </option>
+                                                                                <option value='papua-new-guinean'>Papua
+                                                                                        New
+                                                                                        Guinean</option>
+                                                                                <option value='paraguayan'>Paraguayan
+                                                                                </option>
+                                                                                <option value='peruvian'>Peruvian
+                                                                                </option>
+                                                                                <option value='pitcairn-islander'>
+                                                                                        Pitcairn
+                                                                                        Islander</option>
+                                                                                <option value='polish'>Polish</option>
+                                                                                <option value='portuguese'>Portuguese
+                                                                                </option>
+                                                                                <option value='prydeinig'>Prydeinig
+                                                                                </option>
+                                                                                <option value='puerto-rican'>Puerto
+                                                                                        Rican
+                                                                                </option>
+                                                                                <option value='qatari'>Qatari</option>
+                                                                                <option value='romanian'>Romanian
+                                                                                </option>
+                                                                                <option value='russian'>Russian</option>
+                                                                                <option value='rwandan'>Rwandan</option>
+                                                                                <option value='salvadorean'>Salvadorean
+                                                                                </option>
+                                                                                <option value='sammarinese'>Sammarinese
+                                                                                </option>
+                                                                                <option value='samoan'>Samoan</option>
+                                                                                <option value='sao-tomean'>Sao Tomean
+                                                                                </option>
+                                                                                <option value='saudi-arabian'>Saudi
+                                                                                        Arabian
+                                                                                </option>
+                                                                                <option value='scottish'>Scottish
+                                                                                </option>
+                                                                                <option value='senegalese'>Senegalese
+                                                                                </option>
+                                                                                <option value='serbian'>Serbian</option>
+                                                                                <option value='citizen-of-seychelles'>
+                                                                                        Citizen of
+                                                                                        Seychelles</option>
+                                                                                <option value='sierra-leonean'>Sierra
+                                                                                        Leonean
+                                                                                </option>
+                                                                                <option value='singaporean'>Singaporean
+                                                                                </option>
+                                                                                <option value='slovak'>Slovak</option>
+                                                                                <option value='slovenian'>Slovenian
+                                                                                </option>
+                                                                                <option value='solomon-islander'>Solomon
+                                                                                        Islander</option>
+                                                                                <option value='somali'>Somali</option>
+                                                                                <option value='south-african'>South
+                                                                                        African
+                                                                                </option>
+                                                                                <option value='south-korean'>South
+                                                                                        Korean
+                                                                                </option>
+                                                                                <option value='south-sudanese'>South
+                                                                                        Sudanese
+                                                                                </option>
+                                                                                <option value='spanish'>Spanish</option>
+                                                                                <option value='sri-lankan'>Sri Lankan
+                                                                                </option>
+                                                                                <option value='st-helenian'>St Helenian
+                                                                                </option>
+                                                                                <option value='st-lucian'>St Lucian
+                                                                                </option>
+                                                                                <option value='stateless'>Stateless
+                                                                                </option>
+                                                                                <option value='sudanese'>Sudanese
+                                                                                </option>
+                                                                                <option value='surinamese'>Surinamese
+                                                                                </option>
+                                                                                <option value='swazi'>Swazi</option>
+                                                                                <option value='swedish'>Swedish</option>
+                                                                                <option value='swiss'>Swiss</option>
+                                                                                <option value='syrian'>Syrian</option>
+                                                                                <option value='taiwanese'>Taiwanese
+                                                                                </option>
+                                                                                <option value='tajik'>Tajik</option>
+                                                                                <option value='tanzanian'>Tanzanian
+                                                                                </option>
+                                                                                <option value='thai'>Thai</option>
+                                                                                <option value='togolese'>Togolese
+                                                                                </option>
+                                                                                <option value='tongan'>Tongan</option>
+                                                                                <option value='trinidadian'>Trinidadian
+                                                                                </option>
+                                                                                <option value='tristanian'>Tristanian
+                                                                                </option>
+                                                                                <option value='tunisian'>Tunisian
+                                                                                </option>
+                                                                                <option value='turkish'>Turkish</option>
+                                                                                <option value='turkmen'>Turkmen</option>
+                                                                                <option
+                                                                                        value='turks-and-caicos-islander'>
+                                                                                        Turks
+                                                                                        and Caicos Islander</option>
+                                                                                <option value='tuvaluan'>Tuvaluan
+                                                                                </option>
+                                                                                <option value='ugandan'>Ugandan</option>
+                                                                                <option value='ukrainian'>Ukrainian
+                                                                                </option>
+                                                                                <option value='uruguayan'>Uruguayan
+                                                                                </option>
+                                                                                <option value='uzbek'>Uzbek</option>
+                                                                                <option value='vatican-citizen'>Vatican
+                                                                                        citizen
+                                                                                </option>
+                                                                                <option value='citizen-of-vanuatu'>
+                                                                                        Citizen of
+                                                                                        Vanuatu</option>
+                                                                                <option value='venezuelan'>Venezuelan
+                                                                                </option>
+                                                                                <option value='vietnamese'>Vietnamese
+                                                                                </option>
+                                                                                <option value='vincentian'>Vincentian
+                                                                                </option>
+                                                                                <option value='wallisian'>Wallisian
+                                                                                </option>
+                                                                                <option value='welsh'>Welsh</option>
+                                                                                <option value='yemeni'>Yemeni</option>
+                                                                                <option value='zambian'>Zambian</option>
+                                                                                <option value='zimbabwean'>Zimbabwean
+                                                                                </option>
+                                                                        </select>
+                                                                </li>
+
+                                                                <li>
+                                                                        <label for="religi"
+                                                                                id="rel">Religion</label><br>
+                                                                        <select class="details" id="religion" name="">
+                                                                                <option value="none" selected disabled
+                                                                                        hidden>
+                                                                                        Select Option</option>
+                                                                                <option value="hindu">Hindu</option>
+                                                                                <option value="muslim">Muslim</option>
+                                                                                <option value="christian">Christian
+                                                                                </option>
+                                                                                <option value="sikh">Sikh</option>
+                                                                                <option value="other">Other</option>
+                                                                        </select>
+                                                                </li>
+
+                                                                <li>
+                                                                        <label for="categ" id="cat">Category</label><br>
+                                                                        <select id="category" class="details" name="">
+                                                                                <option value="none" selected disabled
+                                                                                        hidden>
+                                                                                        Select Option</option>
+                                                                                <option value="general">General</option>
+                                                                                <option value="obc">OBC</option>
+                                                                                <option value="sc">SC</option>
+                                                                                <option value="st">ST</option>
+                                                                                <option value="other">Other</option>
+                                                                        </select>
+                                                                </li>
+
+                                                                <li>
+                                                                        <label for="pan" id="pannum">PAN Number
+                                                                                *</label><br>
+                                                                        <input type="text" class="details"
+                                                                                id="pannumber" minlength="10"
+                                                                                maxlength="10" placeholder="PAN"
+                                                                                required>
+                                                                </li>
+
+                                                                <li>
+                                                                        <label for="aad" id="aadnum">Aadhaar Number
+                                                                                *</label><br>
+                                                                        <input type="text" class="details" id="aadhaar"
+                                                                                minlength="12" maxlength="12"
+                                                                                placeholder="Aadhaar" required>
+                                                                </li>
+                                                        </div>
+                                                </div>
+                                                <!-- Personal Details ends -->
+
+                                                <!-- Contact Details start -->
+
+
+                                                <div class="white-box">
+                                                        <h3 id="contactdetails">Contact Details</h3>
+                                                        <p id="note">Note: Please fill necessary fields marked *</p>
+                                                        <div class="contact">
+                                                                <li>
+                                                                        <label for="mobi" id="mobilenum">Mobile Number
+                                                                                *</label><br>
+                                                                        <input type="text" class="details" name="mobnum"
+                                                                                id="mob" pattern="[0-9]{10}"
+                                                                                minlength="10" maxlength="10"
+                                                                                placeholder="Mobile Number" required>
+                                                                </li>
+
+                                                                <li>
+                                                                        <label for="almobi" id="almobilenum">Alternate
+                                                                                Mobile
+                                                                                Number</label><br>
+                                                                        <input type="text" class="details" id="almob"
+                                                                                minlength="10" maxlength="10"
+                                                                                placeholder="Mobile Number">
+                                                                </li>
+
+                                                                <li>
+                                                                        <label for="em" id="email">Email ID
+                                                                                *</label><br>
+                                                                        <input type="email" class="details" name="Email"
+                                                                                id="emailid" placeholder="email"
+                                                                                required>
+                                                                </li>
+
+                                                                <li>
+                                                                        <label for="ad" id="addr">Address *</label><br>
+                                                                        <input type="text" class="details"
+                                                                                name="address" id="address"
+                                                                                placeholder="Enter text here ..."
+                                                                                required>
+                                                                </li>
+
+                                                                <li>
+                                                                        <label for="cityvil" id="civi">City/Village
+                                                                                *</label><br>
+                                                                        <input type="text" class="details" name="city"
+                                                                                id="cv" placeholder="City/Village"
+                                                                                required>
+                                                                </li>
+
+                                                                <li>
+                                                                        <label for="dis" id="district">District
+                                                                                *</label><br>
+                                                                        <input type="text" class="details"
+                                                                                name="district" id="dist"
+                                                                                placeholder="District" required>
+                                                                </li>
+
+                                                                <li>
+                                                                        <label for="sta" id="state">State *</label><br>
+                                                                        <select name="state" id="stat" class="details"
+                                                                                required>
+                                                                                <option value="" selected disabled
+                                                                                        hidden>Select
+                                                                                        Option</option>
+                                                                                <option value="Andhra Pradesh">Andhra
+                                                                                        Pradesh
+                                                                                </option>
+                                                                                <option
+                                                                                        value="Andaman and Nicobar Islands">
+                                                                                        Andaman and Nicobar Islands
+                                                                                </option>
+                                                                                <option value="Arunachal Pradesh">
+                                                                                        Arunachal
+                                                                                        Pradesh</option>
+                                                                                <option value="Assam">Assam</option>
+                                                                                <option value="Bihar">Bihar</option>
+                                                                                <option value="Chandigarh">Chandigarh
+                                                                                </option>
+                                                                                <option value="Chhattisgarh">
+                                                                                        Chhattisgarh
+                                                                                </option>
+                                                                                <option value="Dadar and Nagar Haveli">
+                                                                                        Dadar and
+                                                                                        Nagar Haveli</option>
+                                                                                <option value="Daman and Diu">Daman and
+                                                                                        Diu
+                                                                                </option>
+                                                                                <option value="Delhi">Delhi</option>
+                                                                                <option value="Lakshadweep">Lakshadweep
+                                                                                </option>
+                                                                                <option value="Puducherry">Puducherry
+                                                                                </option>
+                                                                                <option value="Goa">Goa</option>
+                                                                                <option value="Gujarat">Gujarat</option>
+                                                                                <option value="Haryana">Haryana</option>
+                                                                                <option value="Himachal Pradesh">
+                                                                                        Himachal
+                                                                                        Pradesh</option>
+                                                                                <option value="Jammu and Kashmir">Jammu
+                                                                                        and
+                                                                                        Kashmir</option>
+                                                                                <option value="Jharkhand">Jharkhand
+                                                                                </option>
+                                                                                <option value="Karnataka">Karnataka
+                                                                                </option>
+                                                                                <option value="Kerala">Kerala</option>
+                                                                                <option value="Madhya Pradesh">Madhya
+                                                                                        Pradesh
+                                                                                </option>
+                                                                                <option value="Maharashtra">Maharashtra
+                                                                                </option>
+                                                                                <option value="Manipur">Manipur</option>
+                                                                                <option value="Meghalaya">Meghalaya
+                                                                                </option>
+                                                                                <option value="Mizoram">Mizoram</option>
+                                                                                <option value="Nagaland">Nagaland
+                                                                                </option>
+                                                                                <option value="Odisha">Odisha</option>
+                                                                                <option value="Punjab">Punjab</option>
+                                                                                <option value="Rajasthan">Rajasthan
+                                                                                </option>
+                                                                                <option value="Sikkim">Sikkim</option>
+                                                                                <option value="Tamil Nadu">Tamil Nadu
+                                                                                </option>
+                                                                                <option value="Telangana">Telangana
+                                                                                </option>
+                                                                                <option value="Tripura">Tripura</option>
+                                                                                <option value="Uttar Pradesh">Uttar
+                                                                                        Pradesh
+                                                                                </option>
+                                                                                <option value="Uttarakhand">Uttarakhand
+                                                                                </option>
+                                                                                <option value="West Bengal">West Bengal
+                                                                                </option>
+                                                                        </select>
+                                                                </li>
+
+                                                                <li>
+                                                                        <label for="pin" id="pinnum">PIN *</label><br>
+                                                                        <input type="text" class="details" id="pin"
+                                                                                placeholder="PIN" required>
+                                                                </li>
+
+                                                                <li>
+                                                                        <label for="con" id="count">Country
+                                                                                *</label><br>
+                                                                        <select id="country" class="details"
+                                                                                name="country" required>
+                                                                                <option value="" selected disabled
+                                                                                        hidden>Select
+                                                                                        Option</option>
+                                                                                <option value="Afganistan">Afghanistan
+                                                                                </option>
+                                                                                <option value="Albania">Albania</option>
+                                                                                <option value="Algeria">Algeria</option>
+                                                                                <option value="American Samoa">American
+                                                                                        Samoa
+                                                                                </option>
+                                                                                <option value="Andorra">Andorra</option>
+                                                                                <option value="Angola">Angola</option>
+                                                                                <option value="Anguilla">Anguilla
+                                                                                </option>
+                                                                                <option value="Antigua & Barbuda">
+                                                                                        Antigua &
+                                                                                        Barbuda</option>
+                                                                                <option value="Argentina">Argentina
+                                                                                </option>
+                                                                                <option value="Armenia">Armenia</option>
+                                                                                <option value="Aruba">Aruba</option>
+                                                                                <option value="Australia">Australia
+                                                                                </option>
+                                                                                <option value="Austria">Austria</option>
+                                                                                <option value="Azerbaijan">Azerbaijan
+                                                                                </option>
+                                                                                <option value="Bahamas">Bahamas</option>
+                                                                                <option value="Bahrain">Bahrain</option>
+                                                                                <option value="Bangladesh">Bangladesh
+                                                                                </option>
+                                                                                <option value="Barbados">Barbados
+                                                                                </option>
+                                                                                <option value="Belarus">Belarus</option>
+                                                                                <option value="Belgium">Belgium</option>
+                                                                                <option value="Belize">Belize</option>
+                                                                                <option value="Benin">Benin</option>
+                                                                                <option value="Bermuda">Bermuda</option>
+                                                                                <option value="Bhutan">Bhutan</option>
+                                                                                <option value="Bolivia">Bolivia</option>
+                                                                                <option value="Bonaire">Bonaire</option>
+                                                                                <option value="Bosnia & Herzegovina">
+                                                                                        Bosnia &
+                                                                                        Herzegovina</option>
+                                                                                <option value="Botswana">Botswana
+                                                                                </option>
+                                                                                <option value="Brazil">Brazil</option>
+                                                                                <option
+                                                                                        value="British Indian Ocean Ter">
+                                                                                        British
+                                                                                        Indian Ocean Ter</option>
+                                                                                <option value="Brunei">Brunei</option>
+                                                                                <option value="Bulgaria">Bulgaria
+                                                                                </option>
+                                                                                <option value="Burkina Faso">Burkina
+                                                                                        Faso
+                                                                                </option>
+                                                                                <option value="Burundi">Burundi</option>
+                                                                                <option value="Cambodia">Cambodia
+                                                                                </option>
+                                                                                <option value="Cameroon">Cameroon
+                                                                                </option>
+                                                                                <option value="Canada">Canada</option>
+                                                                                <option value="Canary Islands">Canary
+                                                                                        Islands
+                                                                                </option>
+                                                                                <option value="Cape Verde">Cape Verde
+                                                                                </option>
+                                                                                <option value="Cayman Islands">Cayman
+                                                                                        Islands
+                                                                                </option>
+                                                                                <option
+                                                                                        value="Central African Republic">
+                                                                                        Central
+                                                                                        African Republic</option>
+                                                                                <option value="Chad">Chad</option>
+                                                                                <option value="Channel Islands">Channel
+                                                                                        Islands
+                                                                                </option>
+                                                                                <option value="Chile">Chile</option>
+                                                                                <option value="China">China</option>
+                                                                                <option value="Christmas Island">
+                                                                                        Christmas
+                                                                                        Island</option>
+                                                                                <option value="Cocos Island">Cocos
+                                                                                        Island
+                                                                                </option>
+                                                                                <option value="Colombia">Colombia
+                                                                                </option>
+                                                                                <option value="Comoros">Comoros</option>
+                                                                                <option value="Congo">Congo</option>
+                                                                                <option value="Cook Islands">Cook
+                                                                                        Islands
+                                                                                </option>
+                                                                                <option value="Costa Rica">Costa Rica
+                                                                                </option>
+                                                                                <option value="Cote DIvoire">Cote
+                                                                                        DIvoire
+                                                                                </option>
+                                                                                <option value="Croatia">Croatia</option>
+                                                                                <option value="Cuba">Cuba</option>
+                                                                                <option value="Curaco">Curacao</option>
+                                                                                <option value="Cyprus">Cyprus</option>
+                                                                                <option value="Czech Republic">Czech
+                                                                                        Republic
+                                                                                </option>
+                                                                                <option value="Denmark">Denmark</option>
+                                                                                <option value="Djibouti">Djibouti
+                                                                                </option>
+                                                                                <option value="Dominica">Dominica
+                                                                                </option>
+                                                                                <option value="Dominican Republic">
+                                                                                        Dominican
+                                                                                        Republic</option>
+                                                                                <option value="East Timor">East Timor
+                                                                                </option>
+                                                                                <option value="Ecuador">Ecuador</option>
+                                                                                <option value="Egypt">Egypt</option>
+                                                                                <option value="El Salvador">El Salvador
+                                                                                </option>
+                                                                                <option value="Equatorial Guinea">
+                                                                                        Equatorial
+                                                                                        Guinea</option>
+                                                                                <option value="Eritrea">Eritrea</option>
+                                                                                <option value="Estonia">Estonia</option>
+                                                                                <option value="Ethiopia">Ethiopia
+                                                                                </option>
+                                                                                <option value="Falkland Islands">
+                                                                                        Falkland
+                                                                                        Islands</option>
+                                                                                <option value="Faroe Islands">Faroe
+                                                                                        Islands
+                                                                                </option>
+                                                                                <option value="Fiji">Fiji</option>
+                                                                                <option value="Finland">Finland</option>
+                                                                                <option value="France">France</option>
+                                                                                <option value="French Guiana">French
+                                                                                        Guiana
+                                                                                </option>
+                                                                                <option value="French Polynesia">French
+                                                                                        Polynesia</option>
+                                                                                <option value="French Southern Ter">
+                                                                                        French
+                                                                                        Southern Ter</option>
+                                                                                <option value="Gabon">Gabon</option>
+                                                                                <option value="Gambia">Gambia</option>
+                                                                                <option value="Georgia">Georgia</option>
+                                                                                <option value="Germany">Germany</option>
+                                                                                <option value="Ghana">Ghana</option>
+                                                                                <option value="Gibraltar">Gibraltar
+                                                                                </option>
+                                                                                <option value="Great Britain">Great
+                                                                                        Britain
+                                                                                </option>
+                                                                                <option value="Greece">Greece</option>
+                                                                                <option value="Greenland">Greenland
+                                                                                </option>
+                                                                                <option value="Grenada">Grenada</option>
+                                                                                <option value="Guadeloupe">Guadeloupe
+                                                                                </option>
+                                                                                <option value="Guam">Guam</option>
+                                                                                <option value="Guatemala">Guatemala
+                                                                                </option>
+                                                                                <option value="Guinea">Guinea</option>
+                                                                                <option value="Guyana">Guyana</option>
+                                                                                <option value="Haiti">Haiti</option>
+                                                                                <option value="Hawaii">Hawaii</option>
+                                                                                <option value="Honduras">Honduras
+                                                                                </option>
+                                                                                <option value="Hong Kong">Hong Kong
+                                                                                </option>
+                                                                                <option value="Hungary">Hungary</option>
+                                                                                <option value="Iceland">Iceland</option>
+                                                                                <option value="Indonesia">Indonesia
+                                                                                </option>
+                                                                                <option value="India">India</option>
+                                                                                <option value="Iran">Iran</option>
+                                                                                <option value="Iraq">Iraq</option>
+                                                                                <option value="Ireland">Ireland</option>
+                                                                                <option value="Isle of Man">Isle of Man
+                                                                                </option>
+                                                                                <option value="Israel">Israel</option>
+                                                                                <option value="Italy">Italy</option>
+                                                                                <option value="Jamaica">Jamaica</option>
+                                                                                <option value="Japan">Japan</option>
+                                                                                <option value="Jordan">Jordan</option>
+                                                                                <option value="Kazakhstan">Kazakhstan
+                                                                                </option>
+                                                                                <option value="Kenya">Kenya</option>
+                                                                                <option value="Kiribati">Kiribati
+                                                                                </option>
+                                                                                <option value="Korea North">Korea North
+                                                                                </option>
+                                                                                <option value="Korea Sout">Korea South
+                                                                                </option>
+                                                                                <option value="Kuwait">Kuwait</option>
+                                                                                <option value="Kyrgyzstan">Kyrgyzstan
+                                                                                </option>
+                                                                                <option value="Laos">Laos</option>
+                                                                                <option value="Latvia">Latvia</option>
+                                                                                <option value="Lebanon">Lebanon</option>
+                                                                                <option value="Lesotho">Lesotho</option>
+                                                                                <option value="Liberia">Liberia</option>
+                                                                                <option value="Libya">Libya</option>
+                                                                                <option value="Liechtenstein">
+                                                                                        Liechtenstein
+                                                                                </option>
+                                                                                <option value="Lithuania">Lithuania
+                                                                                </option>
+                                                                                <option value="Luxembourg">Luxembourg
+                                                                                </option>
+                                                                                <option value="Macau">Macau</option>
+                                                                                <option value="Macedonia">Macedonia
+                                                                                </option>
+                                                                                <option value="Madagascar">Madagascar
+                                                                                </option>
+                                                                                <option value="Malaysia">Malaysia
+                                                                                </option>
+                                                                                <option value="Malawi">Malawi</option>
+                                                                                <option value="Maldives">Maldives
+                                                                                </option>
+                                                                                <option value="Mali">Mali</option>
+                                                                                <option value="Malta">Malta</option>
+                                                                                <option value="Marshall Islands">
+                                                                                        Marshall
+                                                                                        Islands</option>
+                                                                                <option value="Martinique">Martinique
+                                                                                </option>
+                                                                                <option value="Mauritania">Mauritania
+                                                                                </option>
+                                                                                <option value="Mauritius">Mauritius
+                                                                                </option>
+                                                                                <option value="Mayotte">Mayotte</option>
+                                                                                <option value="Mexico">Mexico</option>
+                                                                                <option value="Midway Islands">Midway
+                                                                                        Islands
+                                                                                </option>
+                                                                                <option value="Moldova">Moldova</option>
+                                                                                <option value="Monaco">Monaco</option>
+                                                                                <option value="Mongolia">Mongolia
+                                                                                </option>
+                                                                                <option value="Montserrat">Montserrat
+                                                                                </option>
+                                                                                <option value="Morocco">Morocco</option>
+                                                                                <option value="Mozambique">Mozambique
+                                                                                </option>
+                                                                                <option value="Myanmar">Myanmar</option>
+                                                                                <option value="Nambia">Nambia</option>
+                                                                                <option value="Nauru">Nauru</option>
+                                                                                <option value="Nepal">Nepal</option>
+                                                                                <option value="Netherland Antilles">
+                                                                                        Netherland
+                                                                                        Antilles</option>
+                                                                                <option value="Netherlands">Netherlands
+                                                                                        (Holland, Europe)</option>
+                                                                                <option value="Nevis">Nevis</option>
+                                                                                <option value="New Caledonia">New
+                                                                                        Caledonia
+                                                                                </option>
+                                                                                <option value="New Zealand">New Zealand
+                                                                                </option>
+                                                                                <option value="Nicaragua">Nicaragua
+                                                                                </option>
+                                                                                <option value="Niger">Niger</option>
+                                                                                <option value="Nigeria">Nigeria</option>
+                                                                                <option value="Niue">Niue</option>
+                                                                                <option value="Norfolk Island">Norfolk
+                                                                                        Island
+                                                                                </option>
+                                                                                <option value="Norway">Norway</option>
+                                                                                <option value="Oman">Oman</option>
+                                                                                <option value="Pakistan">Pakistan
+                                                                                </option>
+                                                                                <option value="Palau Island">Palau
+                                                                                        Island
+                                                                                </option>
+                                                                                <option value="Palestine">Palestine
+                                                                                </option>
+                                                                                <option value="Panama">Panama</option>
+                                                                                <option value="Papua New Guinea">Papua
+                                                                                        New
+                                                                                        Guinea</option>
+                                                                                <option value="Paraguay">Paraguay
+                                                                                </option>
+                                                                                <option value="Peru">Peru</option>
+                                                                                <option value="Phillipines">Philippines
+                                                                                </option>
+                                                                                <option value="Pitcairn Island">Pitcairn
+                                                                                        Island
+                                                                                </option>
+                                                                                <option value="Poland">Poland</option>
+                                                                                <option value="Portugal">Portugal
+                                                                                </option>
+                                                                                <option value="Puerto Rico">Puerto Rico
+                                                                                </option>
+                                                                                <option value="Qatar">Qatar</option>
+                                                                                <option value="Republic of Montenegro">
+                                                                                        Republic
+                                                                                        of Montenegro</option>
+                                                                                <option value="Republic of Serbia">
+                                                                                        Republic of
+                                                                                        Serbia</option>
+                                                                                <option value="Reunion">Reunion</option>
+                                                                                <option value="Romania">Romania</option>
+                                                                                <option value="Russia">Russia</option>
+                                                                                <option value="Rwanda">Rwanda</option>
+                                                                                <option value="St Barthelemy">St
+                                                                                        Barthelemy
+                                                                                </option>
+                                                                                <option value="St Eustatius">St
+                                                                                        Eustatius
+                                                                                </option>
+                                                                                <option value="St Helena">St Helena
+                                                                                </option>
+                                                                                <option value="St Kitts-Nevis">St
+                                                                                        Kitts-Nevis
+                                                                                </option>
+                                                                                <option value="St Lucia">St Lucia
+                                                                                </option>
+                                                                                <option value="St Maarten">St Maarten
+                                                                                </option>
+                                                                                <option value="St Pierre & Miquelon">St
+                                                                                        Pierre &
+                                                                                        Miquelon</option>
+                                                                                <option value="St Vincent & Grenadines">
+                                                                                        St
+                                                                                        Vincent & Grenadines</option>
+                                                                                <option value="Saipan">Saipan</option>
+                                                                                <option value="Samoa">Samoa</option>
+                                                                                <option value="Samoa American">Samoa
+                                                                                        American
+                                                                                </option>
+                                                                                <option value="San Marino">San Marino
+                                                                                </option>
+                                                                                <option value="Sao Tome & Principe">Sao
+                                                                                        Tome &
+                                                                                        Principe</option>
+                                                                                <option value="Saudi Arabia">Saudi
+                                                                                        Arabia
+                                                                                </option>
+                                                                                <option value="Senegal">Senegal</option>
+                                                                                <option value="Seychelles">Seychelles
+                                                                                </option>
+                                                                                <option value="Sierra Leone">Sierra
+                                                                                        Leone
+                                                                                </option>
+                                                                                <option value="Singapore">Singapore
+                                                                                </option>
+                                                                                <option value="Slovakia">Slovakia
+                                                                                </option>
+                                                                                <option value="Slovenia">Slovenia
+                                                                                </option>
+                                                                                <option value="Solomon Islands">Solomon
+                                                                                        Islands
+                                                                                </option>
+                                                                                <option value="Somalia">Somalia</option>
+                                                                                <option value="South Africa">South
+                                                                                        Africa
+                                                                                </option>
+                                                                                <option value="Spain">Spain</option>
+                                                                                <option value="Sri Lanka">Sri Lanka
+                                                                                </option>
+                                                                                <option value="Sudan">Sudan</option>
+                                                                                <option value="Suriname">Suriname
+                                                                                </option>
+                                                                                <option value="Swaziland">Swaziland
+                                                                                </option>
+                                                                                <option value="Sweden">Sweden</option>
+                                                                                <option value="Switzerland">Switzerland
+                                                                                </option>
+                                                                                <option value="Syria">Syria</option>
+                                                                                <option value="Tahiti">Tahiti</option>
+                                                                                <option value="Taiwan">Taiwan</option>
+                                                                                <option value="Tajikistan">Tajikistan
+                                                                                </option>
+                                                                                <option value="Tanzania">Tanzania
+                                                                                </option>
+                                                                                <option value="Thailand">Thailand
+                                                                                </option>
+                                                                                <option value="Togo">Togo</option>
+                                                                                <option value="Tokelau">Tokelau</option>
+                                                                                <option value="Tonga">Tonga</option>
+                                                                                <option value="Trinidad & Tobago">
+                                                                                        Trinidad &
+                                                                                        Tobago</option>
+                                                                                <option value="Tunisia">Tunisia</option>
+                                                                                <option value="Turkey">Turkey</option>
+                                                                                <option value="Turkmenistan">
+                                                                                        Turkmenistan
+                                                                                </option>
+                                                                                <option value="Turks & Caicos Is">Turks
+                                                                                        & Caicos
+                                                                                        Is</option>
+                                                                                <option value="Tuvalu">Tuvalu</option>
+                                                                                <option value="Uganda">Uganda</option>
+                                                                                <option value="United Kingdom">United
+                                                                                        Kingdom
+                                                                                </option>
+                                                                                <option value="Ukraine">Ukraine</option>
+                                                                                <option value="United Arab Erimates">
+                                                                                        United Arab
+                                                                                        Emirates</option>
+                                                                                <option
+                                                                                        value="United States of America">
+                                                                                        United
+                                                                                        States of America</option>
+                                                                                <option value="Uraguay">Uruguay</option>
+                                                                                <option value="Uzbekistan">Uzbekistan
+                                                                                </option>
+                                                                                <option value="Vanuatu">Vanuatu</option>
+                                                                                <option value="Vatican City State">
+                                                                                        Vatican City
+                                                                                        State</option>
+                                                                                <option value="Venezuela">Venezuela
+                                                                                </option>
+                                                                                <option value="Vietnam">Vietnam</option>
+                                                                                <option value="Virgin Islands (Brit)">
+                                                                                        Virgin
+                                                                                        Islands (Brit)</option>
+                                                                                <option value="Virgin Islands (USA)">
+                                                                                        Virgin
+                                                                                        Islands (USA)</option>
+                                                                                <option value="Wake Island">Wake Island
+                                                                                </option>
+                                                                                <option value="Wallis & Futana Is">
+                                                                                        Wallis &
+                                                                                        Futana Is</option>
+                                                                                <option value="Yemen">Yemen</option>
+                                                                                <option value="Zaire">Zaire</option>
+                                                                                <option value="Zambia">Zambia</option>
+                                                                                <option value="Zimbabwe">Zimbabwe
+                                                                                </option>
+                                                                        </select>
+                                                                </li>
+                                                        </div>
+                                                </div>
+
+                                                <!-- Contact Details ends -->
+
+                                                <!-- Uploads start -->
+                                                <div class="white-box">
+                                                        <h3 id="uploaddocuments">Uploads</h3>
+                                                        <p id="note">Note: Please fill necessary fields marked *</p>
+                                                        <div class="uploads">
+                                                                <li>
+                                                                        <label for="photo" id="passphoto">Passport Photo
+                                                                                *</label><br>
+                                                                        <input type="file" id="myfile" name="filename"
+                                                                                required>
+                                                                        <p id="notesmall">*please upload most recent
+                                                                                photo</p>
+                                                                </li>
+
+                                                                <li>
+                                                                        <label for="identification" id="formofid">Form
+                                                                                of Identification</label><br>
+                                                                        <input type="file" id="formid" name="filename">
+                                                                        <p id="notesmall">*upload preferred form of
+                                                                                identification</p>
+                                                                </li>
+
+                                                                <li>
+                                                                        <label for="panc" id="pancard">Pan
+                                                                                Card</label><br>
+                                                                        <input type="file" id="panca" name="panc">
+                                                                        <p id="notesmall">*upload your pancard</p>
+                                                                </li>
+
+                                                                <li>
+                                                                        <label for="passp"
+                                                                                id="passport">Passport</label><br>
+                                                                        <input type="file" id="pass" name="Passport">
+                                                                        <p id="notesmall">*upload your passport if
+                                                                                available</p>
+                                                                </li>
+
+                                                                <li>
+                                                                        <label for="aadhaar" id="aadhaarcard">Aadhaar
+                                                                                Card</label><br>
+                                                                        <input type="file" id="aacc" name="adh">
+                                                                        <p id="notesmall">*upload your aadhaar card</p>
+                                                                </li>
+                                                        </div>
+                                                </div>
+                                                <!-- Uploads ends -->
+
+
+                                                <!-- Terms & Policies start -->
+
+                                                <div class="white-box">
+                                                        <h3 id="termspolicies">Terms & Policies</h3>
+                                                        <div class="terms">
+                                                                <li>
+                                                                        <div class="terpol">
+                                                                                Lorem ipsum dolor sit amet, consectetur
+                                                                                adipiscing elit, sed do eiusmod tempor
+                                                                                incididunt ut
+                                                                                labore et dolore magna aliqua. Mi ipsum
+                                                                                faucibus vitae aliquet nec ullamcorper
+                                                                                sit. Eu facilisis
+                                                                                sed odio morbi quis commodo odio aenean.
+                                                                                Ultricies leo integer malesuada nunc vel
+                                                                                risus commodo
+                                                                                viverra. Eleifend donec pretium
+                                                                                vulputate sapien. Nulla at volutpat diam
+                                                                                ut venenatis tellus in
+                                                                                metus. Arcu vitae elementum curabitur
+                                                                                vitae nunc. Sit amet cursus sit amet.
+                                                                                Accumsan lacus vel
+                                                                                facilisis volutpat est. Amet cursus sit
+                                                                                amet dictum. Posuere morbi leo urna
+                                                                                molestie at
+                                                                                elementum eu facilisis sed. Sed viverra
+                                                                                tellus in hac habitasse platea dictumst
+                                                                                vestibulum
+                                                                                rhoncus. Elit eget gravida cum sociis
+                                                                                natoque penatibus et magnis. Ridiculus
+                                                                                mus mauris vitae
+                                                                                ultricies leo. Orci phasellus egestas
+                                                                                tellus rutrum tellus pellentesque eu
+                                                                                tincidunt. Lectus
+                                                                                quam id leo in. Amet luctus venenatis
+                                                                                lectus magna fringilla urna porttitor
+                                                                                rhoncus. Quis
+                                                                                blandit turpis cursus in hac. Orci nulla
+                                                                                pellentesque dignissim enim sit amet
+                                                                                venenatis urna.
+                                                                                Massa ultricies mi quis hendrerit dolor
+                                                                                magna eget est. Platea dictumst
+                                                                                vestibulum rhoncus est
+                                                                                pellentesque elit ullamcorper. Lacus sed
+                                                                                turpis tincidunt id aliquet. Eget est
+                                                                                lorem ipsum dolor
+                                                                                sit. Nibh ipsum consequat nisl vel
+                                                                                pretium lectus quam. Enim facilisis
+                                                                                gravida neque convallis a
+                                                                                cras semper auctor neque. Pellentesque
+                                                                                massa placerat duis ultricies lacus sed
+                                                                                turpis tincidunt.
+                                                                                Lectus proin nibh nisl condimentum id
+                                                                                venenatis a condimentum. Gravida rutrum
+                                                                                quisque non tellus
+                                                                                orci ac auctor. Praesent tristique magna
+                                                                                sit amet purus gravida. Facilisi morbi
+                                                                                tempus iaculis
+                                                                                urna id volutpat lacus laoreet. Magna
+                                                                                fermentum iaculis eu non. Amet nisl
+                                                                                purus in mollis. Netus
+                                                                                et malesuada fames ac turpis egestas
+                                                                                integer. Elit pellentesque habitant
+                                                                                morbi tristique
+                                                                                senectus et netus. Leo duis ut diam quam
+                                                                                nulla porttitor. Nec tincidunt praesent
+                                                                                semper feugiat
+                                                                                nibh sed. Sagittis orci a scelerisque
+                                                                                purus semper eget duis at tellus. Amet
+                                                                                facilisis magna
+                                                                                etiam tempor orci eu. Dolor morbi non
+                                                                                arcu risus. Ut etiam sit amet nisl purus
+                                                                                in mollis nunc.
+                                                                                Molestie nunc non blandit massa enim nec
+                                                                                dui. Commodo elit at imperdiet dui
+                                                                                accumsan sit amet
+                                                                                nulla. At varius vel pharetra vel turpis
+                                                                                nunc eget. Ultrices vitae auctor eu
+                                                                                augue. Sit amet
+                                                                                purus gravida quis blandit turpis. Eros
+                                                                                donec ac odio tempor orci dapibus. Nibh
+                                                                                venenatis cras
+                                                                                sed felis eget velit aliquet. Sit amet
+                                                                                consectetur adipiscing elit ut aliquam
+                                                                                purus. Placerat
+                                                                                duis ultricies lacus sed turpis. Sed
+                                                                                felis eget velit aliquet sagittis id
+                                                                                consectetur. Mattis
+                                                                                enim ut tellus elementum sagittis. Non
+                                                                                arcu risus quis varius quam. Ipsum
+                                                                                suspendisse ultrices
+                                                                                gravida dictum fusce ut placerat orci.
+                                                                                Nisi quis eleifend quam adipiscing
+                                                                                vitae. Tristique
+                                                                                senectus et netus et malesuada. Quam
+                                                                                vulputate dignissim suspendisse in est
+                                                                                ante. Scelerisque
+                                                                                varius morbi enim nunc faucibus a
+                                                                                pellentesque sit amet. Tempor nec
+                                                                                feugiat nisl pretium fusce
+                                                                                id velit ut tortor. Fringilla ut morbi
+                                                                                tincidunt augue. Consequat nisl vel
+                                                                                pretium lectus. Nunc
+                                                                                aliquet bibendum enim facilisis. Dui
+                                                                                accumsan sit amet nulla facilisi morbi
+                                                                                tempus. Ipsum dolor
+                                                                                sit amet consectetur. Etiam dignissim
+                                                                                diam quis enim lobortis scelerisque
+                                                                                fermentum dui.
+                                                                                Condimentum id venenatis a condimentum
+                                                                                vitae sapien pellentesque. Enim nulla
+                                                                                aliquet porttitor
+                                                                                lacus luctus. Interdum posuere lorem
+                                                                                ipsum dolor sit. Sit amet mattis
+                                                                                vulputate enim nulla
+                                                                                aliquet. Aliquam vestibulum morbi
+                                                                                blandit cursus risus. Vel orci porta non
+                                                                                pulvinar neque
+                                                                                laoreet suspendisse interdum
+                                                                                consectetur. Vel quam elementum pulvinar
+                                                                                etiam non quam lacus
+                                                                                suspendisse. Suspendisse sed nisi lacus
+                                                                                sed viverra tellus in hac habitasse.
+                                                                                Mauris pharetra et
+                                                                                ultrices neque ornare aenean euismod
+                                                                                elementum. Diam volutpat commodo sed
+                                                                                egestas egestas
+                                                                                fringilla phasellus faucibus
+                                                                                scelerisque. Pulvinar etiam non quam
+                                                                                lacus suspendisse faucibus
+                                                                                interdum posuere. Nunc sed velit
+                                                                                dignissim sodales. Facilisis gravida
+                                                                                neque convallis a cras
+                                                                                semper. Dolor sit amet consectetur
+                                                                                adipiscing. Lobortis feugiat vivamus at
+                                                                                augue. Ac tortor
+                                                                                dignissim convallis aenean et. In nibh
+                                                                                mauris cursus mattis molestie a iaculis.
+                                                                                Ac feugiat sed
+                                                                                lectus vestibulum mattis ullamcorper
+                                                                                velit. Eget est lorem ipsum dolor sit
+                                                                                amet consectetur
+                                                                                adipiscing. Viverra mauris in aliquam
+                                                                                sem. Interdum velit laoreet id donec
+                                                                                ultrices tincidunt
+                                                                                arcu non sodales. Magna etiam tempor
+                                                                                orci eu lobortis. Quis risus sed
+                                                                                vulputate odio ut enim.
+                                                                                Viverra aliquet eget sit amet tellus
+                                                                                cras adipiscing. Ac odio tempor orci
+                                                                                dapibus. Suscipit
+                                                                                adipiscing bibendum est ultricies. Morbi
+                                                                                non arcu risus quis varius quam quisque
+                                                                                id. Et netus et
+                                                                                malesuada fames ac. Nisi vitae suscipit
+                                                                                tellus mauris. Maecenas volutpat blandit
+                                                                                aliquam etiam
+                                                                                erat velit scelerisque in dictum. Aenean
+                                                                                et tortor at risus viverra adipiscing at
+                                                                                in tellus.
+                                                                                Dignissim suspendisse in est ante in
+                                                                                nibh. Consectetur a erat nam at lectus.
+                                                                                A arcu cursus vitae
+                                                                                congue mauris rhoncus aenean vel.
+                                                                                Aliquam etiam erat velit scelerisque.
+                                                                                Sed sed risus pretium
+                                                                                quam vulputate. Hac habitasse platea
+                                                                                dictumst vestibulum rhoncus est
+                                                                                pellentesque elit.
+                                                                                Phasellus egestas tellus rutrum tellus
+                                                                                pellentesque eu tincidunt tortor
+                                                                                aliquam. Diam maecenas
+                                                                                sed enim ut sem viverra aliquet eget
+                                                                                sit. Sed turpis tincidunt id aliquet
+                                                                                risus feugiat in ante
+                                                                                metus. Lacus suspendisse faucibus
+                                                                                interdum posuere lorem ipsum dolor sit.
+                                                                                Quisque id diam vel
+                                                                                quam elementum pulvinar etiam non.
+                                                                                Tincidunt augue interdum velit euismod
+                                                                                in pellentesque.
+                                                                                Vestibulum morbi blandit cursus risus at
+                                                                                ultrices mi. Aliquam eleifend mi in
+                                                                                nulla posuere
+                                                                                sollicitudin aliquam ultrices sagittis.
+                                                                                Eget magna fermentum iaculis eu non diam
+                                                                                phasellus
+                                                                                vestibulum lorem. Leo integer malesuada
+                                                                                nunc vel risus commodo viverra. Et
+                                                                                magnis dis parturient
+                                                                                montes. Volutpat maecenas volutpat
+                                                                                blandit aliquam etiam. Nulla
+                                                                                pellentesque dignissim enim sit
+                                                                                amet venenatis urna cursus eget. Pretium
+                                                                                fusce id velit ut tortor. Gravida in
+                                                                                fermentum et
+                                                                                sollicitudin ac orci. Nunc non blandit
+                                                                                massa enim nec. Ut venenatis tellus in
+                                                                                metus vulputate
+                                                                                eu. Praesent elementum facilisis leo vel
+                                                                                fringilla. Nullam non nisi est sit amet
+                                                                                facilisis
+                                                                                magna. Ultrices gravida dictum fusce ut.
+                                                                                Eu nisl nunc mi ipsum faucibus. Sit amet
+                                                                                aliquam id
+                                                                                diam maecenas. Turpis cursus in hac
+                                                                                habitasse platea dictumst quisque
+                                                                                sagittis. Et ultrices
+                                                                                neque ornare aenean euismod elementum
+                                                                                nisi quis eleifend. Pellentesque elit
+                                                                                eget gravida cum
+                                                                                sociis natoque. Pellentesque massa
+                                                                                placerat duis ultricies lacus sed turpis
+                                                                                tincidunt. Integer
+                                                                                eget aliquet nibh praesent. Convallis
+                                                                                convallis tellus id interdum velit
+                                                                                laoreet id donec
+                                                                                ultrices. Volutpat sed cras ornare arcu
+                                                                                dui. Elementum nisi quis eleifend quam
+                                                                                adipiscing vitae
+                                                                                proin. Elit pellentesque habitant morbi
+                                                                                tristique senectus et. Ullamcorper
+                                                                                malesuada proin
+                                                                                libero nunc. Lectus nulla at volutpat
+                                                                                diam ut venenatis tellus. Duis tristique
+                                                                                sollicitudin nibh
+                                                                                sit amet commodo nulla facilisi nullam.
+                                                                                Tempor commodo ullamcorper a lacus
+                                                                                vestibulum sed arcu
+                                                                                non odio. Amet purus gravida quis
+                                                                                blandit turpis cursus in. Magna ac
+                                                                                placerat vestibulum lectus
+                                                                                mauris ultrices. Sed risus pretium quam
+                                                                                vulputate dignissim suspendisse in. Quis
+                                                                                commodo odio
+                                                                                aenean sed adipiscing diam donec. In est
+                                                                                ante in nibh mauris cursus mattis
+                                                                                molestie a. Ligula
+                                                                                ullamcorper malesuada proin libero.
+                                                                                Placerat in egestas erat imperdiet.
+                                                                                Elementum nibh tellus
+                                                                                molestie nunc non. Lectus mauris
+                                                                                ultrices eros in cursus turpis.
+                                                                                Tristique senectus et netus et.
+                                                                                Egestas congue quisque egestas diam in
+                                                                                arcu cursus. At in tellus integer
+                                                                                feugiat scelerisque
+                                                                                varius. Sed cras ornare arcu dui vivamus
+                                                                                arcu felis bibendum ut. Mattis vulputate
+                                                                                enim nulla
+                                                                                aliquet.
+                                                                        </div>
+                                                                </li>
+
+                                                                <li>
+                                                                        <input type="checkbox" id="check"
+                                                                                value="condition" required>
+                                                                        <label for="condition" class="condition">
+                                                                                By clicking submit you agree to our
+                                                                                Privacy Policy and Terms and Conditions.
+                                                                        </label>
+                                                                </li>
+
+                                                                <li>
+                                                                        <div class="btn-box">
+                                                                                <button type="submit" class="submit">
+                                                                                        <p class="sub" id="SUB">Submit
+                                                                                        </p>
+                                                                                </button>
+                                                                        </div>
+                                                                </li>
+                                                        </div>
+                                                </div>
+
+                                                <!-- Terms & Policies ends -->
+                                        </div>
+
+                                </div>
+                        </div>
+
+        </section>
+
+
+        <!-- modal box start -->
+        <div class="pop-up-overlay">
+        <div class="pop-up-box-container">
+            <div class="check-container">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <div class="pop-up-message-container">
+                <h1 class="heading"> Sucessfully submitted  </h1>
+                <button class="ok-btn">
+                    <span> OK </span>
+                </button>
+            </div>
+        </div>
+    </div>
+        <!-- modal box ends -->
+
+
+
+
+        </form>
+        <!-- form section ends -->
+
+
+
+        <!-- custom js file link  -->
+        <script src="account.js"></script>
+        </section>
+
+</body>
+
+</html>
