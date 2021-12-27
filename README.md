@@ -1,4 +1,4 @@
-# bank-savings-account 🏦
+# bank-account 🏦
 Bank web page for opening a bank account made using HTML5, CSS and JavaScript.
 
 
